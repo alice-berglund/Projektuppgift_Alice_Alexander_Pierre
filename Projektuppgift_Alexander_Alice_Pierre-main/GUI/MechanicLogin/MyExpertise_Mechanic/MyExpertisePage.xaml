@@ -1,0 +1,20 @@
+﻿<Page x:Class="GUI.MechanicLoginPage.MyExpertise_Mechanic.MyExpertisePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI.MechanicLoginPage.MyExpertise_Mechanic"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="525"
+      Title="MyExpertisePage">
+
+    <Grid>
+        <Label x:Name="myExpertiseHeader" Content="Mina kompetenser" HorizontalAlignment="Left" Height="47" Margin="148,10,0,0" VerticalAlignment="Top" Width="287" FontSize="22" FontWeight="Bold"/>
+        <ListBox x:Name="qualitiesListBox" HorizontalAlignment="Left" Height="210" Margin="96,102,0,0" VerticalAlignment="Top" Width="166" FontSize="14"/>
+        <Button x:Name="deleteButton" Content="Ta bort" HorizontalAlignment="Left" Height="34" Margin="325,102,0,0" VerticalAlignment="Top" Width="110" FontSize="16" RenderTransformOrigin="1.144,0.706" Click="deleteButton_Click"/>
+        <ComboBox x:Name="qualitieDropDown" HorizontalAlignment="Left" Height="37" Margin="297,175,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button x:Name="addNewQualiti" Content="Lägg till kompetsens" HorizontalAlignment="Left" Height="36" Margin="325,252,0,0" VerticalAlignment="Top" Width="122" Click="addNewQualiti_Click"/>
+        <Button x:Name="goBackButton" Content="Tillbaka" HorizontalAlignment="Left" Height="29" Margin="10,301,0,0" VerticalAlignment="Top" Width="65" Click="goBackButton_Click"/>
+
+    </Grid>
+</Page>

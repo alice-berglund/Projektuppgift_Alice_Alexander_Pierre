@@ -1,0 +1,61 @@
+﻿<Page x:Class="GUI.HomePage.AdminHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GUI.HomePage"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="700"
+      Title="AdminHome" FontSize="15">
+
+    <Grid>
+        
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" Margin="10,0,5,5"
+               Grid.ColumnSpan="3"
+               FontWeight="Bold" FontSize="18" FontStyle="Italic" 
+               FontFamily="Bernard MT Condensed" 
+               Foreground="White" Background="Black" 
+               >Hem - Admin</Label>
+
+        <Button x:Name="NewUserButton" Content="Ny användare" Grid.Row="2"
+                Grid.Column="1" Margin="10" FontFamily="Bernard MT Condensed"
+                Foreground="White" Background="Black" BorderBrush="#FFFF0101" Click="NewUserButton_Click"
+                />
+        <Button x:Name="MechanicsButton" Content="Mekaniker" Grid.Row="3" 
+                Grid.Column="1" Margin="10" FontFamily="Bernard MT Condensed"
+                Foreground="White" Background="Black" BorderBrush="#FFFF0101" Click="MechanicsButton_Click"
+                />
+        <Button x:Name="ErrandsButton" Content="Ärenden" Grid.Row="4" 
+                Grid.Column="1" Margin="10" FontFamily="Bernard MT Condensed"
+                Foreground="White" Background="Black" BorderBrush="#FFFF0101" Click="ErrandsButton_Click"
+                />
+
+        <Button x:Name="StockButton" Content="Lager" Grid.Row="5"
+                Grid.Column="1" Margin="10,10,10,160" FontFamily="Bernard MT Condensed"
+                Foreground="White" Background="Black" BorderBrush="#FFFF0101" Click="StockButton_Click"
+                />
+    </Grid>
+</Page>
